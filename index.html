@@ -1,0 +1,275 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>高三生物第一段大測複習</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap">
+<style>
+/* Layout: single reading column, sticky chapter chips, one block per syllabus item (1.1 to 2.5), highlighter marks for key terms, red boxes for common exam traps */
+:root{
+  --bg:#F5F8F7; --surface:#FFFFFF; --fg:#16262B; --muted:#5A6D72; --line:#D5DFDD;
+  --accent:#0C6A5B; --accent-soft:#DDF0EA; --mark:#E8F57F; --mark-fg:#16262B;
+  --trap:#B83A22; --trap-soft:#FBEAE5;
+  --serif:"Noto Serif TC","Songti TC","PMingLiU",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1A1D; --surface:#16252A; --fg:#E4EEEC; --muted:#93A8AC; --line:#2A3E43;
+  --accent:#5CCBB5; --accent-soft:#17383A; --mark:#5E6B12; --mark-fg:#F4FAC7;
+  --trap:#F2917B; --trap-soft:#3A201B; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1A1D; --surface:#16252A; --fg:#E4EEEC; --muted:#93A8AC; --line:#2A3E43;
+  --accent:#5CCBB5; --accent-soft:#17383A; --mark:#5E6B12; --mark-fg:#F4FAC7;
+  --trap:#F2917B; --trap-soft:#3A201B; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.75;padding-inline:16px}
+*{box-sizing:border-box}
+.wrap{max-width:780px;margin:0 auto;padding-block:24px 64px}
+h1,h2,h3{font-family:var(--serif);text-wrap:balance;line-height:1.35;margin:0}
+h1{font-size:1.9rem}
+h2{font-size:1.4rem}
+h3{font-size:1.08rem;margin-top:1.4rem;color:var(--accent)}
+p{margin:.5rem 0}
+ul,ol{margin:.4rem 0;padding-left:1.3rem}
+li{margin:.2rem 0}
+mark{background:var(--mark);color:var(--mark-fg);padding:0 .15em;border-radius:2px}
+header{display:flex;flex-direction:column;gap:.6rem;padding-bottom:1.2rem;border-bottom:2px solid var(--fg)}
+.meta{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;color:var(--muted);font-size:.9rem}
+.meta b{color:var(--fg);font-weight:500}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin-inline:-16px;padding:8px 16px;display:flex;gap:6px;overflow-x:auto}
+nav a{flex:none;text-decoration:none;color:var(--fg);font-size:.85rem;padding:3px 11px;border:1px solid var(--line);border-radius:99px;background:var(--surface)}
+nav a:hover,nav a:focus-visible{border-color:var(--accent);color:var(--accent);outline:none}
+section{padding-top:2rem;scroll-margin-top:60px}
+.sec-head{display:flex;align-items:baseline;gap:.7rem;border-bottom:1px solid var(--line);padding-bottom:.4rem;margin-bottom:.6rem}
+.code{font-family:var(--sans);font-weight:700;color:var(--accent);font-size:1.05rem;font-variant-numeric:tabular-nums}
+.tw{overflow-x:auto;margin:.7rem 0;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;line-height:1.55}
+th,td{padding:8px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+th{background:var(--accent-soft);color:var(--fg);font-weight:500;white-space:nowrap}
+td:first-child{font-weight:500;white-space:nowrap}
+.trap{border:1px solid var(--trap);background:var(--trap-soft);border-radius:8px;padding:.6rem .9rem;margin:.9rem 0}
+.trap b{color:var(--trap);font-weight:700}
+.note{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:.6rem .9rem;margin:.9rem 0}
+.note b{color:var(--accent)}
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:.8rem 0}
+.chain span{padding:5px 12px;border:1px solid var(--accent);border-radius:6px;background:var(--surface);font-weight:500}
+.chain i{font-style:normal;color:var(--muted)}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:.8rem 0}
+.cols>div{min-width:0;border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:.2rem .9rem .6rem}
+.cols h3{margin-top:.6rem;font-size:1rem}
+details{border:1px solid var(--line);border-radius:8px;background:var(--surface);margin:.5rem 0;padding:.5rem .9rem}
+summary{cursor:pointer;font-weight:500}
+summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+details p{color:var(--muted);margin:.4rem 0 0}
+footer{margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+@media (max-width:480px){h1{font-size:1.55rem}}
+</style>
+
+<div class="wrap">
+<header>
+  <h1>高三生物科 第一段大測複習</h1>
+  <div class="meta">
+    <span><b>題型</b> 選擇題 15 題 × 2 分 = 30 分</span>
+    <span><b>題型</b> 分析與問答題 70 分</span>
+    <span><b>範圍</b> 1.1–1.5、2.3–2.5</span>
+  </div>
+</header>
+
+<nav aria-label="章節">
+  <a href="#s11">1.1</a><a href="#s12">1.2</a><a href="#s13">1.3</a><a href="#s14">1.4</a><a href="#s15">1.5</a>
+  <a href="#s23">2.3</a><a href="#s24">2.4</a><a href="#s25">2.5</a><a href="#quiz">自測</a>
+</nav>
+
+<section id="s11">
+  <div class="sec-head"><span class="code">1.1</span><h2>生物學是甚麼</h2></div>
+  <p><mark>生物學</mark>是研究生物和生命現象的科學,內容包括生物的結構、功能、生長、遺傳、分類、生態與演化。</p>
+  <ul>
+    <li><b>屬於生物學範疇:</b>研究細胞結構、植物如何進行光合作用、疾病的成因、生物之間及生物與環境的關係。</li>
+    <li><b>不屬於生物學範疇:</b>岩石的形成(地球科學)、金屬的性質(化學)、光的折射(物理)。</li>
+  </ul>
+  <div class="note"><b>判斷方法</b>:先看研究對象。研究的對象是生物或生命活動,就是生物學;只研究非生物的物質或現象,就屬於其他科學。</div>
+</section>
+
+<section id="s12">
+  <div class="sec-head"><span class="code">1.2</span><h2>生物的特徵</h2></div>
+  <p>生物有七項基本特徵。判斷一個對象是否為生物,要看它是否<mark>同時</mark>表現這些特徵。</p>
+  <div class="tw"><table>
+    <tr><th>特徵</th><th>意思</th><th>例子</th></tr>
+    <tr><td>感應</td><td>對環境刺激作出反應</td><td>含羞草被觸碰後葉片合攏;植物的根向水生長</td></tr>
+    <tr><td>運動</td><td>身體或身體一部分改變位置</td><td>動物走動;植物的葉片向光轉動</td></tr>
+    <tr><td>營養</td><td>獲取並利用物質作為能量和生長的來源</td><td>植物光合作用;動物進食</td></tr>
+    <tr><td>呼吸</td><td>分解有機物,釋放能量</td><td>細胞進行有氧呼吸</td></tr>
+    <tr><td>排泄</td><td>排出新陳代謝產生的廢物</td><td>呼出二氧化碳;排出尿液</td></tr>
+    <tr><td>生長</td><td>體積和質量不可逆地增加</td><td>幼苗長成大樹</td></tr>
+    <tr><td>生殖</td><td>產生後代,延續物種</td><td>細菌分裂;動物產卵、產仔</td></tr>
+  </table></div>
+  <div class="trap"><b>易錯</b>:排泄是排出<mark>代謝廢物</mark>,排出未消化的食物殘渣(排遺)不算排泄。生長要求是<mark>不可逆</mark>的增大,食物吃飽後體重增加不是生長。</div>
+
+  <h3>從情境判斷生命特徵</h3>
+  <ul>
+    <li>火焰會「燃燒、變大」,也需要氧氣,但它沒有細胞、不能感應、不能生殖,所以不是生物。</li>
+    <li>汽車會移動、消耗燃料並排出廢氣,但不能生長和生殖,所以不是生物。</li>
+    <li>答題格式:先說出特徵名稱,再引用情境中的證據。例如「植物的根向水生長,這是<mark>感應</mark>」。</li>
+  </ul>
+
+  <h3>單細胞生物能否獨立完成生命活動</h3>
+  <p><mark>可以</mark>。單細胞生物(例如變形蟲、草履蟲、細菌)只有一個細胞,但這個細胞自己完成感應、運動、營養、呼吸、排泄、生長和生殖等全部生命活動。多細胞生物則由不同的細胞分工合作。</p>
+
+  <div class="note"><b>延伸:病毒是特別情況</b>。病毒沒有細胞結構,只有核酸和蛋白質外殼。單獨存在時只是顆粒,沒有生命特徵;<mark>寄生在宿主細胞內</mark>才能複製,表現出生物特徵。所以病毒通常被視為非生物的特別情況。</div>
+</section>
+
+<section id="s13">
+  <div class="sec-head"><span class="code">1.3</span><h2>研習生物學的重要性</h2></div>
+  <ul>
+    <li><b>健康與醫學:</b>了解身體運作,預防和治療疾病,例如疫苗和藥物的研發。</li>
+    <li><b>食物與農業:</b>改良作物和家畜,增加糧食生產。</li>
+    <li><b>環境與生態:</b>了解生物與環境的關係,保護生物多樣性,應對污染和氣候變化。</li>
+    <li><b>科技發展:</b>基因工程、生物科技等都建基於生物學知識。</li>
+    <li><b>個人決策:</b>對飲食、運動、健康資訊作出有根據的判斷。</li>
+  </ul>
+  <p>作答時要<mark>配合題目情境</mark>,舉出具體例子,不要只寫「對人類有幫助」。</p>
+</section>
+
+<section id="s14">
+  <div class="sec-head"><span class="code">1.4</span><h2>科學方法</h2></div>
+  <div class="chain"><span>觀察</span><i>→</i><span>提出問題</span><i>→</i><span>提出假設</span><i>→</i><span>設計及進行實驗</span><i>→</i><span>分析數據</span><i>→</i><span>得出結論</span></div>
+  <h3>可測試的假設</h3>
+  <ul>
+    <li>假設是對問題的暫時解釋,必須能用<mark>實驗或觀察</mark>檢驗。</li>
+    <li>常用句式:「<mark>如果</mark>改變(自變量),<mark>那麼</mark>(因變量)會……」。</li>
+    <li>例:如果增加光照強度,那麼植物的光合作用速率會增加。</li>
+  </ul>
+  <h3>三種變量</h3>
+  <div class="tw"><table>
+    <tr><th>變量</th><th>意思</th><th>例子(光照強度對植物生長的影響)</th></tr>
+    <tr><td>自變量</td><td>實驗者<mark>刻意改變</mark>的因素</td><td>光照強度</td></tr>
+    <tr><td>因變量</td><td>隨自變量改變而被<mark>量度</mark>的結果</td><td>植物高度</td></tr>
+    <tr><td>控制變量</td><td>必須<mark>保持不變</mark>的其他因素</td><td>植物品種、水量、溫度、泥土種類</td></tr>
+  </table></div>
+  <div class="trap"><b>易錯</b>:控制變量不是「不用理會的因素」,而是要刻意保持相同,否則無法確定結果由自變量引起。每次只改變一個自變量。</div>
+</section>
+
+<section id="s15">
+  <div class="sec-head"><span class="code">1.5</span><h2>進行科學探究</h2></div>
+  <h3>分析數據及得出結論</h3>
+  <ul>
+    <li>先描述<mark>趨勢</mark>(上升、下降、先升後降),再引用具體數值支持。</li>
+    <li>結論要回應假設:數據支持還是不支持假設。結論只能由數據推出,不能超出數據的範圍。</li>
+  </ul>
+  <h3>樣本量與可靠性</h3>
+  <ul>
+    <li><mark>樣本量越大</mark>、重複實驗次數越多,結果越可靠,偶然誤差的影響越小。</li>
+    <li>只用一株植物做實驗,結果可能只是個別差異。</li>
+  </ul>
+  <h3>實驗結果的限制</h3>
+  <ul>
+    <li>樣本太少、控制變量未做好、量度工具不夠精確。</li>
+    <li>結果只適用於實驗所用的條件和對象,不能隨便推廣到所有情況。</li>
+  </ul>
+  <h3>科學知識會改變</h3>
+  <p>科學知識建基於證據,出現<mark>新證據</mark>時,舊的解釋可能被修正。科技進步令觀察更精細,例如顯微鏡讓人發現細胞,電子顯微鏡讓人看見細胞內更細小的結構。</p>
+</section>
+
+<section id="s23">
+  <div class="sec-head"><span class="code">2.3</span><h2>細胞的基本結構</h2></div>
+
+  <h3>細胞學說及相關科學家</h3>
+  <div class="tw"><table>
+    <tr><th>科學家</th><th>貢獻</th></tr>
+    <tr><td>胡克(Hooke)</td><td>首次用顯微鏡觀察軟木薄片,命名為「細胞」</td></tr>
+    <tr><td>施萊登(Schleiden)</td><td>提出<mark>植物</mark>由細胞組成</td></tr>
+    <tr><td>施旺(Schwann)</td><td>提出<mark>動物</mark>由細胞組成</td></tr>
+    <tr><td>魏爾肖(Virchow)</td><td>提出「細胞來自細胞」</td></tr>
+  </table></div>
+  <div class="trap"><b>易錯</b>:植物是施萊登,動物是施旺,兩人不要對調。胡克看到的是軟木的死細胞壁。</div>
+
+  <h3>植物與動物細胞結構</h3>
+  <div class="cols">
+    <div><h3>兩者都有</h3><p>細胞膜、細胞質、細胞核、線粒體、核糖體、內質網、高爾基體</p></div>
+    <div><h3>植物細胞獨有</h3><p>細胞壁、葉綠體、大液泡</p></div>
+    <div><h3>動物細胞特有</h3><p>中心體(高等植物沒有);溶酶體主要見於動物細胞</p></div>
+  </div>
+
+  <h3>細胞器功能</h3>
+  <div class="tw"><table>
+    <tr><th>結構</th><th>功能</th></tr>
+    <tr><td>細胞膜</td><td>控制物質進出細胞</td></tr>
+    <tr><td>細胞壁</td><td>主要由纖維素構成,支持和保護植物細胞</td></tr>
+    <tr><td>細胞核</td><td>含 DNA,控制細胞的活動和遺傳</td></tr>
+    <tr><td>線粒體</td><td>進行<mark>有氧呼吸</mark>,釋放能量</td></tr>
+    <tr><td>葉綠體</td><td>進行<mark>光合作用</mark></td></tr>
+    <tr><td>核糖體</td><td>合成蛋白質</td></tr>
+    <tr><td>粗糙內質網(rER)</td><td>合成蛋白質,並運送到高爾基體</td></tr>
+    <tr><td>滑面內質網(sER)</td><td>合成和分泌脂質</td></tr>
+    <tr><td>高爾基體</td><td>加工、包裝和分泌蛋白質</td></tr>
+    <tr><td>溶酶體</td><td>含水解酶,分解細菌和食物</td></tr>
+    <tr><td>大液泡</td><td>儲存物質,維持細胞膨脹</td></tr>
+  </table></div>
+
+  <h3>細胞結構與功能的關係</h3>
+  <p>答題邏輯:<mark>細胞的功能需要甚麼 → 由哪個細胞器負責 → 所以含有大量該細胞器</mark>。</p>
+  <div class="tw"><table>
+    <tr><th>細胞</th><th>大量細胞器</th><th>理由</th></tr>
+    <tr><td>胰腺細胞</td><td>rER、高爾基體</td><td>要分泌大量消化酶(蛋白質)。rER 合成蛋白質,高爾基體加工和分泌</td></tr>
+    <tr><td>睪丸細胞</td><td>sER</td><td>分泌雄激素,雄激素由脂質組成,sER 負責合成和分泌脂質</td></tr>
+    <tr><td>肌肉細胞、小腸上皮細胞</td><td>線粒體</td><td>肌肉收縮和吸收營養都需要大量能量,線粒體進行有氧呼吸提供能量</td></tr>
+    <tr><td>白血球</td><td>溶酶體</td><td>要分解入侵的細菌以保護身體,溶酶體含水解酶</td></tr>
+  </table></div>
+
+  <h3>細胞器膜結構</h3>
+  <div class="cols">
+    <div><h3>雙層膜</h3><p>細胞核(核膜)、線粒體、葉綠體</p></div>
+    <div><h3>單層膜</h3><p>內質網、高爾基體、溶酶體、液泡</p></div>
+    <div><h3>沒有膜</h3><p>核糖體、中心體</p></div>
+  </div>
+</section>
+
+<section id="s24">
+  <div class="sec-head"><span class="code">2.4</span><h2>身體的組織層次</h2></div>
+  <div class="chain"><span>細胞</span><i>→</i><span>組織</span><i>→</i><span>器官</span><i>→</i><span>系統</span><i>→</i><span>生物體</span></div>
+  <ul>
+    <li><b>組織:</b>形態和功能相似的細胞組成。人體有四大類:上皮組織、結締組織、肌肉組織、神經組織。</li>
+    <li><b>器官:</b>由不同組織組成,執行特定功能。</li>
+    <li><b>系統:</b>由多個器官合作,完成一類生命活動,例如消化系統。</li>
+  </ul>
+  <p><b>按複雜程度排序:</b>細胞器 &lt; 細胞 &lt; 組織 &lt; 器官 &lt; 系統 &lt; 生物體。</p>
+  <div class="note"><b>以胃為例</b>:胃是<mark>器官</mark>,屬於消化系統。內壁的上皮組織分泌胃液,肌肉組織令胃蠕動,神經組織傳遞信號,結締組織連接和支持其他組織。作答時要寫出器官由哪幾種組織組成,以及各組織的功能。</div>
+</section>
+
+<section id="s25">
+  <div class="sec-head"><span class="code">2.5</span><h2>原核細胞與真核細胞</h2></div>
+  <div class="tw"><table>
+    <tr><th>比較項目</th><th>原核細胞(如細菌)</th><th>真核細胞(動物、植物)</th></tr>
+    <tr><td>細胞核</td><td>沒有核膜,DNA 在<mark>擬核</mark>區域</td><td>有核膜包圍的<mark>真正細胞核</mark></td></tr>
+    <tr><td>膜細胞器</td><td>沒有(線粒體、內質網等都沒有)</td><td>有</td></tr>
+    <tr><td>核糖體</td><td>有</td><td>有</td></tr>
+    <tr><td>細胞壁</td><td>多數有(成分與植物不同)</td><td>植物有,動物沒有</td></tr>
+    <tr><td>大小</td><td>較小</td><td>較大</td></tr>
+  </table></div>
+
+  <h3>原核、植物及動物細胞的共同結構</h3>
+  <p>三者都有<mark>細胞膜、細胞質、核糖體</mark>,並以 <mark>DNA</mark> 作為遺傳物質。</p>
+
+  <h3>繪畫及標注</h3>
+  <div class="cols">
+    <div><h3>原核細胞要標注</h3><p>細胞壁、細胞膜、細胞質、擬核(DNA)、核糖體;有些細菌還有鞭毛。</p></div>
+    <div><h3>動物細胞要標注</h3><p>細胞膜、細胞質、細胞核、線粒體、內質網、高爾基體、核糖體等。</p></div>
+    <div><h3>植物細胞要標注</h3><p>在動物細胞的基礎上加上細胞壁、葉綠體、大液泡,並去掉中心體。</p></div>
+  </div>
+  <div class="trap"><b>畫圖要點</b>:用鉛筆和直尺畫標注線,標注線<mark>不可交叉</mark>,線尾要指向結構本身。圖要寫上標題,結構要按比例畫,細胞核不要畫得太小。</div>
+</section>
+
+<section id="quiz">
+  <div class="sec-head"><span class="code">自測</span><h2>快速檢查</h2></div>
+  <details><summary>1. 細菌是單細胞生物,它能獨立完成所有生命活動嗎?</summary><p>可以。單細胞生物的一個細胞就能完成感應、運動、營養、呼吸、排泄、生長和生殖。</p></details>
+  <details><summary>2. 實驗中「保持不變」的因素叫甚麼?</summary><p>控制變量。</p></details>
+  <details><summary>3. 誰提出動物由細胞組成?</summary><p>施旺(Schwann)。植物則是施萊登(Schleiden)。</p></details>
+  <details><summary>4. 為甚麼胰腺細胞含有大量 rER 和高爾基體?</summary><p>胰腺細胞要分泌大量消化酶(蛋白質)。rER 合成蛋白質,高爾基體加工和分泌蛋白質,所以含有大量這兩種細胞器。</p></details>
+  <details><summary>5. 哪些細胞器具有雙層膜?</summary><p>細胞核(核膜)、線粒體、葉綠體。</p></details>
+  <details><summary>6. 由小到大排列:器官、細胞、系統、組織。</summary><p>細胞 → 組織 → 器官 → 系統。</p></details>
+  <details><summary>7. 原核細胞與真核細胞最主要的分別是甚麼?</summary><p>原核細胞沒有核膜包圍的細胞核,也沒有膜細胞器;真核細胞有。</p></details>
+</section>
+
+<footer>依據校本高三級生物科第一段大測大綱整理。</footer>
+</div>
+
+</body></html>
